@@ -39,6 +39,41 @@
 .header .container .links:hover .icon span:nth-child(2) {
   width: 100%;
 }
+.header .container .links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #F6F6F6;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 10;
+}
+.header .container .links ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #F6F6F6 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+.header .container .links ul li > a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+.header .container .links ul li > a:hover {
+  padding-left: 25px;
+  color: rgb(0, 174, 255);
+}
+.header .container .links ul li:not(:last-child) a {
+  border-bottom: 2px solid #DDD;
+}
 
 * {
   box-sizing: border-box;
@@ -68,4 +103,8 @@ body {
   .container {
     width: 1170px;
   }
+}
+
+.header .container .links ul.active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
