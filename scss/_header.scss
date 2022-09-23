@@ -1,2 +1,56 @@
 @import 'variables';
 @import 'mixins';
+
+.header {
+    padding: 20px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 60px;
+        }
+
+        .links {
+            position: relative;
+            cursor: pointer;
+
+            .icon {
+                width: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                span {
+                    background-color: #333;
+                    margin-bottom: 5px;
+                    height: 2px;
+                    cursor: pointer;
+
+                    &:first-child {
+                        width: 100%;
+                    }
+
+                    &:nth-child(2) {
+                        width: 70%;
+                        transition: 0.3s;
+                    }
+
+                    &:last-child {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &:hover {
+
+                .icon span:nth-child(2) {
+                        width: 100%;
+                    }
+
+            }
+        }
+    }
+}

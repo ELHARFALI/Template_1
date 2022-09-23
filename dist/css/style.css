@@ -1,4 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap");
+.header {
+  padding: 20px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .logo {
+  width: 60px;
+}
+.header .container .links {
+  position: relative;
+  cursor: pointer;
+}
+.header .container .links .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header .container .links .icon span {
+  background-color: #333;
+  margin-bottom: 5px;
+  height: 2px;
+  cursor: pointer;
+}
+.header .container .links .icon span:first-child {
+  width: 100%;
+}
+.header .container .links .icon span:nth-child(2) {
+  width: 70%;
+  transition: 0.3s;
+}
+.header .container .links .icon span:last-child {
+  width: 100%;
+}
+.header .container .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
