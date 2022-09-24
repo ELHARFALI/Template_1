@@ -63,6 +63,7 @@
                 top: calc(100% + 15px);
                 display: none;
                 z-index: 10;
+                border: 1px solid #ddd;
 
                 &::before {
                     content: '';
@@ -83,7 +84,7 @@
 
                     &:hover {
                         padding-left: 25px;
-                        color: rgb(0, 174, 255);
+                        color: $main-color;
                     }
                 }
 

@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixins';
+
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+
+        .feat {
+            padding: 20px;
+            text-align: center;
+
+            i {
+                color: $main-color;
+            }
+
+            h3 {
+                font-weight: bold;
+                margin: 30px 0;
+            }
+
+            p {
+                line-height: 1.8;
+                color: #777;
+                font-size: 17px;
+            }
+        }
+    }
+}
