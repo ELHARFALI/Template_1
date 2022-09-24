@@ -75,6 +75,23 @@
   border-bottom: 2px solid #DDD;
 }
 
+.landing {
+  background-color: #F6F6F6;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+.landing .intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.landing .intro-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+  color: #10cab7;
+}
 * {
   box-sizing: border-box;
 }
