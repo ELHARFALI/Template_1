@@ -3,6 +3,7 @@
 @import "header";
 @import "landing";
 @import "features";
+@import "services";
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap");
 
@@ -41,6 +42,30 @@ body {
             ul.active {
                 display: block;
             }
+        }
+    }
+}
+
+.special__heading {
+    color: #ebeced;
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -3px;
+    margin: 0;
+
+    @include mobile {
+        font-size: 60px;
+    }
+
+    & + p {
+        margin: -30px 0 0 ;
+        font-size: 20px;
+        text-align: center;
+        color: #797979;
+
+        @include mobile {
+            margin: -20px 0 0;
         }
     }
 }

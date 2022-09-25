@@ -104,6 +104,7 @@
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #ddd;
 }
 .features .container {
   display: grid;
@@ -125,6 +126,11 @@
   line-height: 1.8;
   color: #777;
   font-size: 17px;
+}
+
+.services {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 * {
@@ -159,4 +165,29 @@ body {
 
 .header .container .links ul.active {
   display: block;
+}
+
+.special__heading {
+  color: #ebeced;
+  font-size: 100px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -3px;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .special__heading {
+    font-size: 60px;
+  }
+}
+.special__heading + p {
+  margin: -30px 0 0;
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+}
+@media (max-width: 767px) {
+  .special__heading + p {
+    margin: -20px 0 0;
+  }
 }/*# sourceMappingURL=style.css.map */
